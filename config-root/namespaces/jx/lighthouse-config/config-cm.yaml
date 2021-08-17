@@ -41,7 +41,7 @@ data:
         - needs-rebase
         repos:
         - cub-d/jx3-eks-vault
-      target_url: http://lighthouse-jx./merge/status
+      target_url: http://lighthouse-jx.52.65.103.170.nip.io/merge/status
 kind: ConfigMap
 metadata:
   creationTimestamp: null
