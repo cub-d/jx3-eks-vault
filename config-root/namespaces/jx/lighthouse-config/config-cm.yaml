@@ -11,6 +11,7 @@ data:
         briancole01/demo2: true
         briancole01/demo3: true
         briancole01/demo5: true
+        briancole01/demo6: true
         cub-d/jx3-eks-vault: true
     plank: {}
     pod_namespace: jx
@@ -27,6 +28,7 @@ data:
         briancole01/demo2: merge
         briancole01/demo3: merge
         briancole01/demo5: merge
+        briancole01/demo6: merge
         cub-d/jx3-eks-vault: merge
       queries:
       - labels:
@@ -43,6 +45,7 @@ data:
         - briancole01/demo2
         - briancole01/demo3
         - briancole01/demo5
+        - briancole01/demo6
       - labels:
         - updatebot
         missingLabels:
@@ -57,6 +60,7 @@ data:
         - briancole01/demo2
         - briancole01/demo3
         - briancole01/demo5
+        - briancole01/demo6
       target_url: http://lighthouse-jx.52.62.98.222.nip.io/merge/status
 kind: ConfigMap
 metadata:
