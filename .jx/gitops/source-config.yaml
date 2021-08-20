@@ -11,6 +11,7 @@ spec:
     - name: demo1
     - name: demo2
     - name: demo3
+    - name: demo4
     scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'
