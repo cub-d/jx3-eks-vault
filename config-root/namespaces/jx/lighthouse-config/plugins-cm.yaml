@@ -26,6 +26,10 @@ data:
       repos:
       - briancole01/demo6
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - cub-d/demo-6
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -57,6 +61,11 @@ data:
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
         name: lighthouse-webui-plugin
       briancole01/demo6:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      cub-d/demo-6:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
@@ -151,6 +160,22 @@ data:
       - cat
       - dog
       - pony
+      cub-d/demo-6:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       cub-d/jx3-eks-vault:
       - config-updater
       - approve
@@ -194,6 +219,9 @@ data:
       trusted_org: todo
     - repos:
       - briancole01/demo6
+      trusted_org: todo
+    - repos:
+      - cub-d/demo-6
       trusted_org: todo
     welcome:
     - message_template: Welcome
