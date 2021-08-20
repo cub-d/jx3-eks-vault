@@ -21,7 +21,7 @@ jxRequirements:
     schedule: ""
   cluster:
     chartRepository: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
-    clusterName: tf-jx-usable-locust
+    clusterName: tf-jx-guided-goshawk
     devEnvApprovers:
     - todo
     environmentGitOwner: todo
@@ -39,7 +39,7 @@ jxRequirements:
   - key: staging
   - key: production
   ingress:
-    domain: 52.65.103.170.nip.io
+    domain: 52.62.98.222.nip.io
     kind: ingress
     namespaceSubDomain: -nginx.
     tls:
@@ -52,19 +52,19 @@ jxRequirements:
   secretStorage: vault
   storage:
   - name: logs
-    url: s3://logs-tf-jx-usable-locust-20210817054257921800000007
+    url: s3://logs-tf-jx-guided-goshawk-20210818010848421600000004
   - name: reports
-    url: s3://reports-tf-jx-usable-locust-20210817054257919800000005
+    url: s3://reports-tf-jx-guided-goshawk-20210818010848430200000007
   - name: repository
-    url: s3://repository-tf-jx-usable-locust-20210817054257922200000008
+    url: s3://repository-tf-jx-guided-goshawk-20210818010848421500000003
   terraform: true
   vault:
     aws:
       dynamoDBRegion: ap-southeast-2
-      dynamoDBTable: vault-unseal-tf-jx-usable-locust-yThEb4wj
-      kmsKeyId: f39982f3-b5eb-488b-a1fb-34dabe313770
+      dynamoDBTable: vault-unseal-tf-jx-guided-goshawk-jAI6wf48
+      kmsKeyId: 039d4082-6025-464a-80fa-bbe32381c6df
       kmsRegion: ap-southeast-2
-      s3Bucket: vault-unseal-tf-jx-usable-locust-20210817054257907500000002
+      s3Bucket: vault-unseal-tf-jx-guided-goshawk-20210818010848427800000008
       s3Region: ap-southeast-2
   webhook: lighthouse
 jxRequirementsIngressExternalDNS:

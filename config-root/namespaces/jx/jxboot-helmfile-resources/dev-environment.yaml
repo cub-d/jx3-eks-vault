@@ -33,7 +33,7 @@ spec:
     pipelineUserEmail: "jenkins-x@googlegroups.com"
     prowConfig: Scheduler
     storageLocations:
-      - bucketUrl: s3://logs-tf-jx-usable-locust-20210817054257921800000007
+      - bucketUrl: s3://logs-tf-jx-guided-goshawk-20210818010848421600000004
         classifier: logs
-      - bucketUrl: s3://reports-tf-jx-usable-locust-20210817054257919800000005
+      - bucketUrl: s3://reports-tf-jx-guided-goshawk-20210818010848430200000007
         classifier: reports

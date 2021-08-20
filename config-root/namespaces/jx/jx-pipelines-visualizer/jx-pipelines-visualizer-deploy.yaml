@@ -39,13 +39,13 @@ spec:
             - -resync-interval
             - 60s
             - -archived-logs-url-template
-            - s3://logs-tf-jx-usable-locust-20210817054257921800000007/jenkins-x/logs/{{.Owner}}/{{.Repository}}/{{if hasPrefix .Branch "pr"}}{{.Branch | upper}}{{else}}{{.Branch}}{{end}}/{{.Build}}.log
+            - s3://logs-tf-jx-guided-goshawk-20210818010848421600000004/jenkins-x/logs/{{.Owner}}/{{.Repository}}/{{if hasPrefix .Branch "pr"}}{{.Branch | upper}}{{else}}{{.Branch}}{{end}}/{{.Build}}.log
             - -archived-pipelines-url-template
-            - s3://logs-tf-jx-usable-locust-20210817054257921800000007/jenkins-x/logs/{{.Owner}}/{{.Repository}}/{{if hasPrefix .Branch "pr"}}{{.Branch | upper}}{{else}}{{.Branch}}{{end}}/{{.Build}}.yaml
+            - s3://logs-tf-jx-guided-goshawk-20210818010848421600000004/jenkins-x/logs/{{.Owner}}/{{.Repository}}/{{if hasPrefix .Branch "pr"}}{{.Branch | upper}}{{else}}{{.Branch}}{{end}}/{{.Build}}.yaml
             - -archived-pipelineruns-url-template
-            - s3://logs-tf-jx-usable-locust-20210817054257921800000007/jenkins-x/pipelineruns/{{.Namespace}}/{{.Name}}.yaml
+            - s3://logs-tf-jx-guided-goshawk-20210818010848421600000004/jenkins-x/pipelineruns/{{.Namespace}}/{{.Name}}.yaml
             - -pipeline-trace-url-template
-            - http://grafana-jx-observability.52.65.103.170.nip.io/explore?left=%5B%22now%22,%22now%22,%22Tempo%22,%7B%22query%22:%22{{.TraceID}}%22%7D%5D
+            - http://grafana-jx-observability.52.62.98.222.nip.io/explore?left=%5B%22now%22,%22now%22,%22Tempo%22,%7B%22query%22:%22{{.TraceID}}%22%7D%5D
             - -log-level
             - INFO
           env:

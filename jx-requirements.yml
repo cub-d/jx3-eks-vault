@@ -47,7 +47,7 @@ spec:
     aws:
       dynamoDBRegion: ap-southeast-2
       dynamoDBTable: vault-unseal-tf-jx-guided-goshawk-jAI6wf48
-      kmsKeyId: 39d4082-6025-464a-80fa-bbe32381c6df
+      kmsKeyId: 039d4082-6025-464a-80fa-bbe32381c6df
       kmsRegion: ap-southeast-2
       s3Bucket: vault-unseal-tf-jx-guided-goshawk-20210818010848427800000008
       s3Region: ap-southeast-2

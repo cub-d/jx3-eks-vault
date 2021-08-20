@@ -11,6 +11,6 @@ metadata:
     app.kubernetes.io/managed-by: "Helm"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
-    eks.amazonaws.com/role-arn: arn:aws:iam::957204945901:role/tf-jx-usable-locust-jx-pipelines-visualizer
+    eks.amazonaws.com/role-arn: arn:aws:iam::957204945901:role/tf-jx-guided-goshawk-jx-pipelines-visualizer
     meta.helm.sh/release-name: 'jx-pipelines-visualizer'
   namespace: jx
