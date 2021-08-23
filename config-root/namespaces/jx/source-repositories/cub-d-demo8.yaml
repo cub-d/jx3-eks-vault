@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: cub-d
+    provider: github
+    repository: demo8
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: cub-d-demo8
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/cub-d/demo8.git
+  org: cub-d
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: demo8
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/cub-d/demo8
