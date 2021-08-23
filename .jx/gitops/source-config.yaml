@@ -20,6 +20,7 @@ spec:
     repositories:
     - name: demo-6
     - name: demo7
+    - name: demo8
     scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'
