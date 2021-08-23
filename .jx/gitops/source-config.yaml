@@ -12,6 +12,14 @@ spec:
     - name: demo2
     - name: demo3
     - name: demo5
+    - name: demo6
+    scheduler: in-repo
+  - owner: cub-d
+    provider: https://github.com
+    providerKind: github
+    repositories:
+    - name: demo-6
+    - name: demo7
     scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'
